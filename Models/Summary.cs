@@ -8,6 +8,11 @@ namespace MacronutrientsMonitor.Models
 {
     public class Summary : Macronutrients
     {
+        public new decimal Fat { get; set; }
+        public new decimal Protein { get; set; }
+        public new decimal Carbohydrates { get; set; }
+        public new int Calories { get; set; }
+
         public Summary()
         {
             
