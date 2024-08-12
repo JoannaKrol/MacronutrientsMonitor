@@ -1,9 +1,4 @@
 ﻿using MacronutrientsMonitor.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MacronutrientsMonitor.Models
 {
@@ -18,7 +13,7 @@ namespace MacronutrientsMonitor.Models
 
         public void AddRecipe(Recipe recipe)
         {
-            if (_recipes.Any(r => r.Id == recipe.Id || r.DishName == recipe.DishName))
+            if (_recipes.Any(r => r.Id == recipe.Id || r.RecipeName == recipe.RecipeName))
             {
                 throw new DuplicatedRecipeException(recipe);
             }
