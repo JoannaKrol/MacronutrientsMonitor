@@ -20,6 +20,10 @@ namespace MacronutrientsMonitor.Models
 
         public Summary(decimal fat, decimal protein, decimal carbohydrates, int calories) : base(fat, protein, carbohydrates, calories)
         {
+            Fat = fat;
+            Protein = protein;
+            Carbohydrates = carbohydrates;
+            Calories = calories;
         }
     }
 }

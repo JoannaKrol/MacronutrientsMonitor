@@ -31,7 +31,7 @@ namespace MacronutrientsMonitor.Models
             _dishesList.Add(dish);
         }
 
-        public Dish GetDish(Guid id) => _dishesList.Single(d => d.Id == id);
+        public Dish GetDish(Guid id) => _dishesList.SingleOrDefault(d => d.Id == id);
 
         public IEnumerable<Dish> GetAllDishes() => _dishesList;
 
