@@ -20,7 +20,7 @@ namespace MacronutrientsMonitor.Models
 
             _recipes.Add(recipe);
         }
-        public Recipe GetRecipe(Guid id) => _recipes.Single(r => r.Id == id);
+        public Recipe GetRecipe(Guid id) => _recipes.SingleOrDefault(r => r.Id == id);
 
         public IEnumerable<Recipe> GetAllRecipes() => _recipes;
 

@@ -26,7 +26,7 @@ namespace MacronutrientsMonitor.Models
             _days.Add(day);
         }
 
-        public Day GetDay(Guid id) => _days.Single(d => d.Id == id);
+        public Day GetDay(Guid id) => _days.SingleOrDefault(d => d.Id == id);
 
         public IEnumerable<Day> GetAllDays() => _days;
     }
