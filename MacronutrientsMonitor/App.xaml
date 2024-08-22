@@ -15,5 +15,9 @@
         <Style x:Key="MacronutrientsTextBlock" TargetType="TextBlock">
             <Setter Property="Width" Value="100"/>
         </Style>
+
+        <Style TargetType="TextBlock" x:Key="Header">
+            <Setter Property="FontSize" Value="24"/>
+        </Style>
     </Application.Resources>
 </Application>

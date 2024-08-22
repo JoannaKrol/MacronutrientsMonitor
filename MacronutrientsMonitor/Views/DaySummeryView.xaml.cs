@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace MacronutrientsMonitor.Views
 {
     /// <summary>
-    /// Interaction logic for RecipeListeningView.xaml
+    /// Interaction logic for DaySummeryView.xaml
     /// </summary>
-    public partial class RecipeListeningView : UserControl
+    public partial class DaySummeryView : UserControl
     {
-        public RecipeListeningView()
+        public DaySummeryView()
         {
             InitializeComponent();
         }

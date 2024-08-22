@@ -16,7 +16,7 @@
         </Grid.RowDefinitions>
 
         <TextBlock 
-            FontSize="24" 
+            Style="{StaticResource Header}" 
             Grid.Row="0"
             Text="Make Recipe" 
         />
