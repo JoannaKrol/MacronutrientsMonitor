@@ -34,7 +34,7 @@
             <TextBox 
                 Grid.Row="1" 
                 Margin="0 5 0 0"
-                Text="" 
+                Text="{Binding RecipeName, UpdateSourceTrigger=PropertyChanged}" 
             />
         </Grid>
 
@@ -59,7 +59,7 @@
                 Grid.Row="1" 
                 Grid.Column="0"
                 Margin="0 5 0 0"
-                Text="" 
+                Text="{Binding Protein, UpdateSourceTrigger=PropertyChanged}" 
             />
 
             <TextBlock 
@@ -73,7 +73,7 @@
                 Grid.Row="1" 
                 Grid.Column="1"
                 Margin="10 5 0 0"
-                Text="" 
+                Text="{Binding Fat, UpdateSourceTrigger=PropertyChanged}" 
             />
 
             <TextBlock 
@@ -87,7 +87,7 @@
                 Grid.Row="1" 
                 Grid.Column="2"
                 Margin="10 5 0 0"
-                Text="" 
+                Text="{Binding Carbohydrates, UpdateSourceTrigger=PropertyChanged}" 
             />
         </Grid>
         
@@ -109,7 +109,7 @@
             <TextBox 
                 Grid.Row="1" 
                 Grid.Column="0"
-                Text="" 
+                Text="{Binding Calories, UpdateSourceTrigger=PropertyChanged}" 
             />
         </Grid>
 
@@ -118,8 +118,8 @@
             Margin="0 25 0 0"
             Orientation="Horizontal"
         >
-            <Button Content="Add" Width="80"/>
-            <Button Margin="5 0 0 0" Content="Cancel" Width="80"/>
+            <Button Content="Add" Width="80" Command="{Binding AddCommand}"/>
+            <Button Margin="5 0 0 0" Content="Cancel" Width="80" Command="{Binding CancelCommand}"/>
         </StackPanel>
     </Grid>
 </UserControl>
