@@ -1,8 +1,7 @@
 ﻿<Application x:Class="MacronutrientsMonitor.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:MacronutrientsMonitor"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:MacronutrientsMonitor">
     <Application.Resources>
         <Style TargetType="Button">
             <Setter Property="Padding" Value="8 4"/>

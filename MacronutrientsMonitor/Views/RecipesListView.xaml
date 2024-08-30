@@ -28,20 +28,18 @@
             Grid.Column="1" 
             Margin="10 0 0 0" 
             Content="Add recipe" 
+            Command="{Binding AddRecipeCommand}"
         />
 
         </Grid>
-        <ListView Grid.Row="1" Margin="0 25 0 0">
-            <ListViewItem/>
-            <ListViewItem/>
-            <ListViewItem/>
+        <ListView Grid.Row="1" Margin="0 25 0 0" ItemsSource="{Binding Recipes}">
 
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header= "Recipe name">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="Fish and chips"/>
+                                <TextBlock Text="{Binding RecipeName}"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -49,7 +47,7 @@
                     <GridViewColumn Header= "Protein">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="20"/>
+                                <TextBlock Text="{Binding Protein}"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -57,7 +55,7 @@
                     <GridViewColumn Header= "Fat">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="30"/>
+                                <TextBlock Text="{Binding Fat}"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -65,7 +63,7 @@
                     <GridViewColumn Header= "Carbohydrates">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="50"/>
+                                <TextBlock Text="{Binding Carbohydrates}"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -73,7 +71,7 @@
                     <GridViewColumn Header= "Calories">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="800"/>
+                                <TextBlock Text="{Binding Calories}"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
